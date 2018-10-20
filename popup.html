@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <h1 class="title_header">Web Scrawl</h1>
+    <div class="row">
+      <button type="button" id="canvas_switch">Open/Close Canvas</button>
+    </div>
+    <h3>Storage</h3>
+    <div class="row">
+      <button type=button id="save_canvas">Save Canvas</button>
+      <button type=button id="remove_canvas">Remove Canvas</button>
+    </div>
+    <h3>Canvas commands</h3>
+    <div class="row">
+      <button type="button" id="undo">Undo</button>
+      <button type="button" id="redo">Redo</button>
+      <button type="button" id="clear_canvas">Clear Canvas</button>
+    </div>
+    <h3>Tool options</h3>
+    <div class="row">
+      <label for="color_picker">Color:</label>
+      <input type="color" id="color_picker">
+      <label for="line_widthr">Size:</label>
+      <input type="text" id="line_width">
+    </div>
+    <h3>Tools</h3>
+    <div class="row">
+      <label for="brush_mode">Brush</label>
+      <input type="radio" name="draw_mode" id="brush_mode">
+      <label for="rect_mode">Rect</label>
+      <input type="radio" name="draw_mode" id="rect_mode">
+      <label for="eraser_mode">Eraser</label>
+      <input type="radio" name="draw_mode" id="eraser_mode">
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
